@@ -57,13 +57,12 @@ Avant de commencer, tu dois avoir :
 ### 3.3. Fork du dépôt
 
 1. Sur ce repo Git, clique sur **Fork** (en haut à droite).
-   
-   
-  <img width="807" height="126" alt="image" src="https://github.com/user-attachments/assets/6a75eefe-3e00-456b-83f6-4996d646d911" />
+<br><br>   
+<img width="805" height="112" alt="image" src="https://github.com/user-attachments/assets/c3322fe9-05ea-4113-880a-80410185589c" />
 <br><br>
 2. Choisis ton compte GitHub comme destination.
 <br><br>
-<img width="807" height="608" alt="image" src="https://github.com/user-attachments/assets/e2039f23-3744-4138-a09e-d5362708b140" />
+<img width="809" height="617" alt="image" src="https://github.com/user-attachments/assets/e064ae8a-3bd7-4ee7-866d-db3f327d8557" />
 <br><br>
 Tu as maintenant ton propre dépôt avec le code du labo.
 
