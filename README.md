@@ -217,7 +217,7 @@ Les manifests Kubernetes décrivent comment déployer l’application dans le cl
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-app-dev
+  name: hello-app
   namespace: dev
 spec:
   replicas: 1
@@ -250,7 +250,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-app-dev
+  name: hello-app
   namespace: dev
 spec:
   selector:
@@ -265,14 +265,14 @@ spec:
 apiVersion: v1
 kind: Ingress
 metadata:
-  name: hello-app-dev
+  name: hello-app
   namespace: dev
   annotations:
     kubernetes.io/ingress.class: "traefik"
 spec:
   rules:
 # ajouter dans le /etc/host
-# 192.168.21.100  hello.cluster.local
+# 192.168.21.100 hello.cluster.local
     - host: hello.cluster.local
       http:
         paths:
@@ -280,7 +280,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: hello-app-dev
+                name: hello-app
                 port:
                   number: 80
 ```
