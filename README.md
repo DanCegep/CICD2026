@@ -79,7 +79,7 @@ Avant de commencer, tu dois avoir :
    ````
 
 ### 3.2. Création du kubeconfig afin de permette une communication sécurisé entre notre cluster et gitHub. 
-- voir : [Voir la documentation kubeconfig](kubeconfig.md)
+- voir : [Voir la documentation kubeconfig](kubeConfig.md)
 
 
 
