@@ -140,7 +140,7 @@ git checkout dev
 ```
 
 ### 3.6. Création du kubeconfig afin de permette une communication sécurisé entre notre cluster et gitHub. 
-- voir : [Voir la documentation kubeconfig](kubeconfig.md)
+- voir : [Voir la documentation kubeConfig](kubeConfig.md)
 - Mettre ce fichier dans le répertoire K8S de votre projet. 
 
 
