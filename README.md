@@ -78,17 +78,12 @@ Avant de commencer, tu dois avoir :
    code
    ````
 
-### 3.2. Création du kubeconfig afin de permette une communication sécurisé entre notre cluster et gitHub. 
-- voir : [Voir la documentation kubeconfig](kubeconfig.md)
-
-
-
-### 3.3. Dans VS Code,
+### 3.2. Dans VS Code,
    - Aller vous positionner dans projet (Ctrl-K ctrl-O)
    - Faire menu view et terminal pour afficher un terminal
    - Dans le terminal positionnez-vous dans /home/etudiant/Documents/project/ (cd /home/etudiant/Documents/project/)
 
-### 3.4. Fork du dépôt
+### 3.3. Fork du dépôt
 1. Sur ce repo Git, clique sur **Fork** (en haut à droite).
 <br><br>   
 <img width="805" height="112" alt="image" src="https://github.com/user-attachments/assets/c3322fe9-05ea-4113-880a-80410185589c" />
@@ -99,7 +94,7 @@ Avant de commencer, tu dois avoir :
 <br><br>
 Tu as maintenant ton propre dépôt avec le code du labo.
 
-### 3.5. Clôner ton fork sur la VM
+### 3.4. Clôner ton fork sur la VM
 
 Sur la VM (dans VS Code ou terminal) tu vas téléchager de ton git le projet en local sur la vm dans le répertoire project.
 
@@ -108,7 +103,7 @@ git clone https://github.com/<TON_USERNAME>/cicd2026.git
 cd cicd2026
 ```
 
-### 3.6. Créer la branche dev et qa à partir de la branche main
+### 3.5. Créer la branche dev et qa à partir de la branche main
 
 ```
 # ------------------------------------------------------------
@@ -144,7 +139,8 @@ git checkout dev
 
 ```
 
-
+### 3.6. Création du kubeconfig afin de permette une communication sécurisé entre notre cluster et gitHub. 
+- voir : [Voir la documentation kubeconfig](kubeconfig.md)
 
 ## 4. Structure du projet
 
