@@ -2,28 +2,28 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-app
-  namespace: ga
+  namespace: prepod
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: hello-app
-      env: ga
+      env: prepod
   template:
     metadata:
       labels:
         app: hello-app
-        env: ga
+        env: prepod
     spec:
       containers:
         - name: hello-app
-          image: DOCKER_HUB_USERNAME/hello-app:ga
+          image: DOCKER_HUB_USERNAME/hello-app:prepod
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
           env:
             - name: APP_ENV
-              value: ga
+              value: prepod
           resources:
             requests:
               cpu: "50m"
@@ -36,11 +36,11 @@ apiVersion: v1
 kind: Service
 metadata:
   name: hello-app
-  namespace: ga
+  namespace: prepod
 spec:
   selector:
     app: hello-app
-    env: ga
+    env: prepod
   ports:
     - port: 80
       targetPort: 3000
@@ -51,7 +51,7 @@ apiVersion: networking.k8s.io/v11
 kind: Ingress
 metadata:
   name: hello-app
-  namespace: ga
+  namespace: prepod
   annotations:
     kubernetes.io/ingress.class: "traefik"
 spec:
