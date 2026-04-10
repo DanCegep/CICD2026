@@ -438,8 +438,8 @@ jobs:
 - construire l'image initial (Change dockerhub_username pour ton compte dockerhub)
 ```
 docker login -u "ton User dockerHub"
-newgrp docker
 sudo usermod -aG docker $USER
+newgrp docker
 sudo groupadd docker
 docker build -t dockerhub_username/hello-app:dev .
 docker push dockerhub_username/hello-app:dev
