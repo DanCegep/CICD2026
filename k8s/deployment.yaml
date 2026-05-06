@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: hello-app
-          image: DOCKER_HUB_USERNAME/hello-app:dev
+          image: 2230069/hello-app:dev
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
@@ -47,7 +47,7 @@ spec:
       protocol: TCP
   type: ClusterIP
 ---
-apiVersion: networking.k8s.io/v11
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: hello-app
