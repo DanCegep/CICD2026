@@ -20,9 +20,9 @@ Cliquer sur **Generate new token (classic)**
 #### Paramètres recommandés
 
 - **Note** :
-  ```text
+
   VS Code – Git – Accès dépôt
-````
+
 
 *   **Expiration** :
     *   `No expiration` (ou une durée longue)
